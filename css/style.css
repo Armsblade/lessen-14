@@ -1,0 +1,259 @@
+body {
+    font-family: sans-serif;
+}
+*{
+    box-sizing: border-box;
+    margin-right: -3px;
+    
+}
+h1,
+h4,
+p{
+    margin: o;
+}
+.container{
+    margin: 0 auto;
+    width: 1100px;
+    background-color: cadetblue;
+    position: relative;
+    
+}
+.left{
+    width: 490px;
+    height: 900px;
+    position: relative;
+    background-color:#8a6a6a;
+    display: inline-block;
+    padding-top: 60px;
+    vertical-align: middle;
+    
+}
+a{
+    border: 0;
+}
+.Logo{
+    position: absolute;
+    left: 125px;
+}
+.go-to {
+    position: absolute;
+    top: 321px;
+    left: 125px;
+    position: absolute;
+    
+}
+.Arrow{
+    top: 540px;
+    left: 125px;
+    position: absolute;
+    
+}
+.right{
+    left: -2px;
+    width: 610px;
+    height: 900px;
+    position: relative;
+    background-color: #F4F4F4;
+    display: inline-block;
+    padding-top: 60px;
+    vertical-align: middle;
+    
+}
+.foto-box{
+    width: 540px;
+    position: absolute;
+    z-index: 1;
+    top: 144px;
+    left: 120px;
+}
+.foto {
+    width: 540px;
+    height: 586px;
+}
+.twitterlogo, .googlelogo, .linkedinlogo {
+    position: absolute;
+    top: 808px;
+    left: 224px;
+    
+}
+.googlelogo {
+    left:  268px;
+}
+.linkedinlogo {
+    left:  313px;
+}
+/* end left */
+
+/* right */
+.contacts {
+    position: absolute;
+    left: 200px;
+    text-decoration: none;
+    color: #222222;
+}
+.burger {
+    position: absolute;
+    left: 441px;
+    text-decoration: none;
+}
+h4,
+p {
+    
+    padding-left: 25%;
+    color: #000;
+    opacity: 0.7;
+    font-weight: normal;
+    font-size: 18px;
+}
+h4 {
+   font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 4px;
+    margin-top: 125px;
+}
+h1 {
+    font-weight: 600;
+    font-size: 60px;
+    
+    padding-left: 25%;
+    margin-bottom: 30px;
+}
+button {
+    position: absolute;
+    left: 155px;
+    padding: 10px 25px 10px 25px;
+    background-color: #4737FF;
+    color:  #fff;
+    border: 0;
+    cursor: pointer;
+}
+.button1, .button2 {
+    width: 50px;
+    padding: 10px;
+    background-color: #a7a1a1;
+    position: absolute;
+    top: 800px;
+    left: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+.button2 {
+    left: 175px;
+}
+.button1::after{
+    content: '<';
+}
+.button2::after {
+    content: '>';
+}
+/* .about{
+    position: fixed;
+    z-index: 10;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: all 0.2s ease;
+}
+.about .bg_links {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 100%;
+    backdrop-filter: blur(5px);
+    position: absolute;
+    text-decoration: none;
+}
+.about .logo {
+    z-index: 9;
+    background-image: url(logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    opacity: .9;
+    transition: all 1s 0.2s ease;
+    bottom: 0;
+    right: 0;
+    box-shadow: 6px 4px 12px 2px #000;
+}
+.about .social {
+    opacity: 0;
+    right: 0;
+    bottom: 0;
+}
+.about .social .icon {
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s ease, backgroud-color 0.4s ease;
+    opacity: 0;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: yellow;
+}
+.about .social .instagram {
+    transition: all 0.8s ease;
+}
+.about .social .telegram {
+    transition: all 0.8s ease;
+}
+.about .social .github {
+    transition: all 0.8s ease;
+}
+.about:hover {
+    width: 105px;
+    height: 105px;
+    transition: all 0.9s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+.about:hover .logo {
+    opacity: 1;
+    transition: all 0.6s ease;
+}
+.about:hover .social {
+    opacity: 1;
+}
+.about:hover .social .icon {
+    opacity: 0.9;
+}
+.about:hover .social:hover {
+    background-size: 28px;
+}
+.about:hover .social:hover .icon {
+    background-size: 65%;
+    opacity: 1;
+}
+.about:hover .social .instagram {
+    right: 0;
+    bottom: calc(100% + 20px);
+
+    transition: all 0.3s 0s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+.about:hover .social .instagram .icon:hover {
+    background-color: #8a3ab9;
+}
+.about:hover .social .facebook {
+    bottom: 95%;
+    right: 95%;
+    transition: all 0.3s 0s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+.about:hover .social .facebook .icon:hover {
+    background-color: #ea4c89;
+}
+.about:hover .social .github {
+    bottom: 0;
+    right: calc(100% + 20px);
+    transition:  all 0.3s 0s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+.about:hover .social .github .icon:hover {
+    background-color: #8a3ab9;
+} */
